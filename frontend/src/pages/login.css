@@ -1,0 +1,119 @@
+/* General Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f9;
+  }
+  
+  /* Card Styling */
+  .login-card {
+    width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Section */
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #4caf50;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: #45a049;
+  }
+  
+  /* Toggle Link */
+  .toggle-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .toggle-link span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .toggle-link span:hover {
+    color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }

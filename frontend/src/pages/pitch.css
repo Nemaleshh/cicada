@@ -1,0 +1,194 @@
+/* Base Styles */
+.pitch-container {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2d3436;
+    background: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .pitch-header {
+    background: black;
+    /* background: linear-gradient(135deg, #2c3e50, #3498db); */
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .pitch-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-subtext {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Main Content */
+  .pitch-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* How It Works Section */
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .step {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+  }
+  
+  /* Form Styles */
+  .pitch-form {
+    margin-top: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+  }
+  
+  /* Terms Checkbox */
+  .terms-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 2rem 0;
+  }
+  
+  .terms-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background: #3498db;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+  }
+  
+  /* Success Stories */
+  .success-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .success-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .success-tag {
+    display: inline-block;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  /* Footer */
+  .pitch-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    background: #2c3e50;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pitch-header h1 {
+      font-size: 2rem;
+    }
+    
+    .steps-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }

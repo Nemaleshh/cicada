@@ -1,0 +1,133 @@
+.job-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .tab-btn {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .recruiter-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .job-form input,
+  .job-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .submit-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .fresher-section {
+    margin-top: 2rem;
+  }
+  
+  .job-listings {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .job-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-details {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    color: #4b5563;
+  }
+  
+  .apply-btn {
+    background-color: #10b981;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .applied-btn {
+    background-color: #6b7280;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: not-allowed;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+  }
+  
+  .error {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .success {
+    background-color: #dcfce7;
+    color: #16a34a;
+  }

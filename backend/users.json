@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "name": "nkds",
+    "age": "21",
+    "field": "Fresher",
+    "email": "nemu@gmail.com",
+    "password": "$2b$10$EHISvZCiOa7lxQXhIHTG3.i3l8ejDG0.2c85/GrhFt8JADggZJYsC",
+    "completedCourses": [],
+    "resume": "uploads\\1740643175699-graph.pdf",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 1
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": [
+      {
+        "title": "Cicada",
+        "description": "an learning platform"
+      }
+    ]
+  },
+  {
+    "name": ",l;fd",
+    "age": "32",
+    "field": "Recruiter",
+    "email": "bf@gmail.com",
+    "password": "$2b$10$qo92nf.4lxWbn0gtTFDUHeMu8DXYF3IOYUOCMprPdY/TiqDpUQuCe",
+    "completedCourses": [],
+    "resume": null,
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": []
+  },
+  {
+    "name": "cd;sl",
+    "age": "23",
+    "field": "Recruiter",
+    "email": "fesd@gmail.com",
+    "password": "$2b$10$uH.v4W7iHMel2vANl7yy8uJiTd7xsiytotpHieupSPL8uIrRHsOYG",
+    "completedCourses": [],
+    "resume": null,
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": []
+  },
+  {
+    "name": "alex",
+    "age": "12",
+    "field": "Fresher",
+    "email": "alex@gmail.com",
+    "password": "$2b$10$OdFpoW.LLFh35NfhpJbwN.tcSRjC7JB2tk87K4byxL.zc4jXsZrDK",
+    "completedCourses": [],
+    "resume": "uploads\\1740648232632-Cicada-Techpreneur.pdf",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": []
+  }
+]

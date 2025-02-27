@@ -1,0 +1,109 @@
+[
+  {
+    "name": ",';dfs",
+    "age": "12",
+    "field": "Fresher",
+    "email": "b@gmail.com",
+    "password": "$2b$10$3OhWWsKw6Ncqhw7iBCnreu31a4qi/TknLSQO2eoMoMYRHOBP4LSjO",
+    "completedCourses": [],
+    "resume": "uploads\\1740583752872-Nemaleshh_Exno-2appds.pdf",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": []
+  },
+  {
+    "name": "lfds,1223",
+    "age": "12",
+    "field": "Fresher",
+    "email": "asf@gmail.com",
+    "password": "$2b$10$40TxNMsWNEb1NXBEsNUXF.HnL4JKgZ0.dHde.b1fWbqQoqzT.GNG2",
+    "completedCourses": [],
+    "resume": "uploads\\1740584197334-Nemaleshh_Exno-2appds.pdf",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": [
+      4
+    ]
+  },
+  {
+    "name": "gfds",
+    "age": "12",
+    "field": "Fresher",
+    "email": "dsad@gmail.com",
+    "password": "$2b$10$77Pup2mGfhAj59nnrg2PBe7rH4AzBHLq4YWdzVXlDqhPzviDmTDHy",
+    "completedCourses": [],
+    "resume": "uploads\\1740585744699-graph.pdf",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": []
+  },
+  {
+    "name": "dsf",
+    "age": "12",
+    "field": "Fresher",
+    "email": "n@gmail.com",
+    "password": "$2b$10$LfO7v8kMAP8mil4yKFUHOe9..3bOj9J9pYcniyTTNrtpfj2nAHXwC",
+    "completedCourses": [],
+    "resume": "uploads\\1740586078918-graph.pdf",
+    "userStats": {
+      "skillsCompleted": 1,
+      "learningHours": 1,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 3
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": [
+      {
+        "title": "csad",
+        "description": "dss"
+      },
+      {
+        "title": "sda",
+        "description": "sadf"
+      },
+      {
+        "title": "sdaf",
+        "description": "dfsf"
+      }
+    ]
+  },
+  {
+    "name": "cds;.bv",
+    "age": "23",
+    "field": "Fresher",
+    "email": "ne@gmailcom",
+    "password": "$2b$10$c6rw7789/WgStrqdOe7Jeu7EKzFDKEsUbzm.BHH4pbS8iDcWQ9dpC",
+    "completedCourses": [],
+    "resume": "uploads\\1740593867731-Ciricket  themed.docx",
+    "userStats": {
+      "skillsCompleted": 0,
+      "learningHours": 0,
+      "mentorSessions": 0,
+      "jobApplications": 0,
+      "activeProjects": 0
+    },
+    "recentActivities": [],
+    "skillProgress": [],
+    "activeProjects": []
+  }
+]

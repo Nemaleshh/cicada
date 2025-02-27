@@ -1,0 +1,163 @@
+/* General Container */
+.learning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Welcome Section */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+.course-rating {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.complete-btn, .enroll-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.complete-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #388E3C;
+}
+
+.enroll-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.enroll-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Stats Section */
+.stats {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stats h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.stats p {
+  font-size: 1.25rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.chart {
+  width: 250px;
+  height: 250px;
+}
+
+.progress-stats {
+  text-align: center;
+}
+
+.progress-stats p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-tracker {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chart {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+  }
+}

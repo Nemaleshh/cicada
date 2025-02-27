@@ -1,37 +1,41 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// Navbar.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'; // Ensure the correct path to your logo image
+import './Navbar.css'; // Import the CSS file for styling
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      const userData = JSON.parse(atob(token.split(".")[1])); // Decode JWT
-      setUser(userData);
-    }
-  }, []);
-
-  const handleNavigation = () => {
-    if (user?.role === "Fresher") {
-      navigate("/job");
-    } else if (user?.role === "Recruiter") {
-      navigate("/job-rec");
-    }
-  };
-
-  return (
-    <nav className="p-4 bg-blue-500 text-white flex justify-between">
-      <div className="text-xl font-bold">My App</div>
-      <ul className="flex space-x-4">
-        <li onClick={() => navigate("/dashboard")} className="cursor-pointer">Dashboard</li>
-        <li onClick={() => navigate("/learning")} className="cursor-pointer">Learning</li>
-        <li onClick={handleNavigation} className="cursor-pointer">Jobs</li>
-        <li onClick={() => navigate("/signin")} className="cursor-pointer">Sign In</li>
-      </ul>
-    </nav>
-  );
+    return (
+        <nav className="navbar">
+            <div className="navbar-logo">
+                <img src={logo} alt="Logo" />
+            </div>
+            <ul className="navbar-list">
+                <li className="navbar-item">
+                    <Link to="/dashboard">Dashboard</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/learn">Learning Resources</Link>
+                </li>
+                <li className="navbar-item dropdown">
+                    <Link to="/fresh">Job Opportunities</Link>
+                    <div className="dropdown-content">
+                        <Link to="/fresh">Fresher</Link>
+                        <Link to="/rec">Recriuter</Link>
+                    </div>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/expert">Expertise</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/pitch">Pitch Your Ideas</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/login">logout</Link>
+                </li>
+            </ul>
+        </nav>
+    );
 };
 
 export default Navbar;

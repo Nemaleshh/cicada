@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
 import logo from "../assets/logo.png";
+
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
@@ -12,11 +13,16 @@ const Login = () => {
     email: "",
     password: "",
   });
+  const [resumeFile, setResumeFile] = useState(null); // State for resume file
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e) => {
+    setResumeFile(e.target.files[0]); // Store the selected file
   };
 
   const handleSubmit = async (e) => {
@@ -32,7 +38,24 @@ const Login = () => {
           navigate("/dashboard");
         }
       } else {
-        const response = await axios.post("http://localhost:5000/signup", formData);
+        const formDataToSend = new FormData();
+        formDataToSend.append("name", formData.name);
+        formDataToSend.append("age", formData.age);
+        formDataToSend.append("field", formData.field);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("password", formData.password);
+
+        // Append resume file only if the field is "Fresher"
+        if (formData.field === "Fresher" && resumeFile) {
+          formDataToSend.append("resume", resumeFile);
+        }
+
+        const response = await axios.post("http://localhost:5000/signup", formDataToSend, {
+          headers: {
+            "Content-Type": "multipart/form-data", // Required for file uploads
+          },
+        });
+
         alert(response.data.message);
         setIsLogin(true);
       }
@@ -85,6 +108,20 @@ const Login = () => {
                   <option value="Recruiter">Recruiter</option>
                 </select>
               </div>
+
+              {/* Resume Upload for Freshers */}
+              {formData.field === "Fresher" && (
+                <div className="form-group">
+                  <label>Submit Your Resume</label>
+                  <input
+                    type="file"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                    onChange={handleFileChange}
+                    required={formData.field === "Fresher"}
+                  />
+                </div>
+              )}
             </>
           )}
 

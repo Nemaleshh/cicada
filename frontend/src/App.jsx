@@ -1,26 +1,36 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/nav";
-import JobPage from "./pages/userjob";
 import Login from "./pages/login";
-import SignUp from "./pages/signup";
-import Dashboard from "./pages/dashboard";
-import Learning from "./pages/learning";
-import Jobs from "./pages/userjob";
-import UserJobs from "./pages/userjob";
-import RecruiterJobs from "./pages/rec";
+
+import "./index.css";
+import LearningResources from "./pages/learn_path";
+import Dashboard from "./pages/dashborad";
+import Pitch from "./pages/pitch"
+import JobOpportunities from"./pages/job"
+import FresherPage from "./pages/fresh_job";
+import RecruiterPage from "./pages/recruiterpage"
+import Navbar from "./components/nav";
+import Get from "./pages/get";
+import ExpertDiaries from "./pages/expert";
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><Login /></>} />
-        {/* <Route path="/signup" element={<><SignUp /></>} /> */}
-        <Route path="/Dashboard" element={<><Dashboard /></>} />
-        <Route path="/job" element={<><Jobs /></>} />
-        <Route path="/learning" element={<><Navbar /><Learning /></>} />
-        <Route path="/navbar" element={<Navbar />} />
-        <Route path="/userjob" element={<UserJobs />} />
-        <Route path="/recjob" element={<RecruiterJobs />} />
+      <Route path="/login" element={<><Login /></>} />
+      <Route path="/dashboard" element={<><Navbar/><Dashboard/></>} />
+      <Route path="/learn" element={<><Navbar/><LearningResources /></>} />
+      <Route path="/pitch" element={<><Navbar/><Pitch /></>} />
+      <Route path="/fresh" element={<><Navbar/><FresherPage /></>} />
+      <Route path="/rec" element={<><Navbar/><RecruiterPage /></>} />
+      <Route path="/nav" element={<><Navbar /></>} />
+      <Route path="/" element={<><Get /></>} />
+      <Route path="/expert" element={<><Navbar/><ExpertDiaries /></>} />
+   
+
+
+
+    
       </Routes>
     </BrowserRouter>
   );

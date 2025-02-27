@@ -1,0 +1,257 @@
+/* Dashboard Base Styles */
+.dashboard-container {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .dashboard-header {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .dashboard-header h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  
+  /* Quick Stats */
+  .quick-stats {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3498db;
+  }
+  
+  .stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Dashboard Layout */
+  .dashboard-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  .dashboard-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Dashboard Cards */
+  .dashboard-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .dashboard-card h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  /* Progress Bars */
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .progress-item {
+    margin-bottom: 1rem;
+  }
+  
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #3498db;
+    transition: width 0.3s ease;
+  }
+  
+  /* Project List */
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project-item {
+    padding: 1rem;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+  }
+  
+  .project-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .in-progress { background: #3498db; }
+  .feedback { background: #f1c40f; }
+  
+  /* Activity Feed */
+  .activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+  }
+  
+  .activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #3498db;
+  }
+  
+  .activity-icon.course { background: #2ecc71; }
+  .activity-icon.project { background: #e74c3c; }
+  .activity-icon.job { background: #9b59b6; }
+  
+  .activity-date {
+    color: #7f8c8d;
+    font-size: 0.8rem;
+  }
+  
+  /* Quick Actions */
+  .action-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .action-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn-icon {
+    font-size: 1.2rem;
+  }
+  /* Add New Project Form */
+.add-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between form elements */
+}
+
+.add-project-form input,
+.add-project-form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.add-project-form input:focus,
+.add-project-form textarea:focus {
+  border-color: #3498db; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.add-project-form button {
+  padding: 1rem;
+  background: #3498db; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.add-project-form button:hover {
+  background: #2980b9; /* Darker blue on hover */
+}
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .dashboard-main {
+      grid-template-columns: 1fr;
+    }
+    
+    .quick-stats {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 1rem;
+    }
+    
+    .dashboard-header h1 {
+      font-size: 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 1.5rem;
+    }
+  }

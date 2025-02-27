@@ -1,0 +1,35 @@
+.get-started-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .how-it-works, .benefits, .call-to-action {
+    margin-bottom: 30px;
+  }
+  
+  .get-started-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }

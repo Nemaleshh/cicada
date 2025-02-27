@@ -1,56 +1,26 @@
 [
     {
-      "name": "ChatGPT Complete Guide: Learn Generative AI, ChatGPT & More",
-      "img": "https://example.com/image1.jpg",
-      "author": "Julian Melanson, Berza Maman, Leap...",
-      "price": "¥499 ¥29,999",
-      "rating": "4.5 ★★★★☆ (44,584)",
-      "link": "https://example.com/course1",
-      "domain": "AI"
+      "id": 1,
+      "category": "AI/ML",
+      "title": "Machine Learning Fundamentals",
+      "desc": "Master core ML concepts and algorithms",
+      "rating": 4.8,
+      "enrolled": 2450
     },
     {
-      "name": "The Complete AI-Powered Copywriting Course & ChatGPT...",
-      "img": "https://example.com/image2.jpg",
-      "author": "Ing. Tomas Moravek, Learn Digital...",
-      "price": "¥499 ¥39,999",
-      "rating": "4.2 ★★★★☆ (17,596)",
-      "link": "https://example.com/course2",
-      "domain": "AI"
+      "id": 2,
+      "category": "Web Development",
+      "title": "Advanced React.js",
+      "desc": "Build modern web applications with React",
+      "rating": 4.7,
+      "enrolled": 1800
     },
     {
-      "name": "ChatGPT, Midjourney, Gemini, DeepSeek Marketing Tools",
-      "img": "https://example.com/image3.jpg",
-      "author": "Anton Voronik, Anton Voronik Support...",
-      "price": "¥499 ¥799",
-      "rating": "4.5 ★★★★☆ (490)",
-      "link": "https://example.com/course3",
-      "domain": "Marketing"
-    },
-    {
-      "name": "Mastering SEO With ChatGPT: Ultimate Beginner’s Guide",
-      "img": "https://example.com/image4.jpg",
-      "author": "Anton Voronik, Anton Voronik Support",
-      "price": "¥499 ¥799",
-      "rating": "4.4 ★★★★☆ (254)",
-      "link": "https://example.com/course4",
-      "domain": "Marketing"
-    },
-    {
-      "name": "Python for Data Science and Machine Learning",
-      "img": "https://example.com/image5.jpg",
-      "author": "Jose Portilla",
-      "price": "¥499 ¥9,999",
-      "rating": "4.6 ★★★★☆ (120,000)",
-      "link": "https://example.com/course5",
-      "domain": "Data Science"
-    },
-    {
-      "name": "Full Stack Web Development with React and Node.js",
-      "img": "https://example.com/image6.jpg",
-      "author": "Maximilian Schwarzmüller",
-      "price": "¥499 ¥14,999",
-      "rating": "4.7 ★★★★☆ (95,000)",
-      "link": "https://example.com/course6",
-      "domain": "Full Stack"
+      "id": 3,
+      "category": "Data Science",
+      "title": "Data Visualization with Python",
+      "desc": "Learn to create stunning visualizations",
+      "rating": 4.6,
+      "enrolled": 1200
     }
   ]

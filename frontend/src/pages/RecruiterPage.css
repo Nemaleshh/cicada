@@ -1,0 +1,35 @@
+    /* RecruiterPage.css */
+.recruiter-page {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  }
+  
+  .job-form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(5, 150, 105, 0.1);
+  }
+  
+  .file-upload-label {
+    border: 2px dashed #059669;
+    transition: all 0.3s ease;
+  }
+  
+  .file-upload-label:hover {
+    background: rgba(5, 150, 105, 0.05);
+    border-color: #047857;
+  }
+  
+  .file-upload-label.dragover {
+    background: rgba(5, 150, 105, 0.1);
+    border-color: #065f46;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .post-success {
+    animation: pulse 1s ease-in-out;
+  }

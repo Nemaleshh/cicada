@@ -89,7 +89,7 @@ Investor Collaboration Channels
 ## Responsive Design
 ![alt text](<img/WhatsApp Image 2025-02-25 at 23.08.37_00f06208.jpg>)
 ## Our Solution
-
+<video controls src="img/Cicada - Made with Clipchamp.mp4" title="Title"></video>
 - Practical Skill-Building - Focus on hands-on
   projects over traditional passive learning.
 
